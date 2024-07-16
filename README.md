@@ -11,7 +11,7 @@ At present, there are 163 countries supported, and I will continue to update the
 
 ## Usage
 ```shell
-bash <(curl -Ls (https://raw.githubusercontent.com/ecyecy/OpenAI-Checker/main/openai.sh))
+bash <(curl -Ls https://raw.githubusercontent.com/ecyecy/OpenAI-Checker/main/openai.sh)
 ```
 ## Result
 ```
