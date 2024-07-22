@@ -3,7 +3,7 @@
 # @Author: Vincent Young
 # @Date: 2023-02-09 17:39:59
 # @LastEditors: ecyecy
-# @LastEditTime: 2024-07-16 18:39:00
+# @LastEditTime: 2024-07-22 21:21:00
 # @FilePath: /OpenAI-Checker/openai.sh
 # @Telegram: https://t.me/missuo
 # 
@@ -66,8 +66,6 @@ else
         if [[ "${SUPPORT_COUNTRY[@]}" =~ "${iso2_code4}" ]]; then
             if check_additional_endpoints; then
                 echo -e "${GREEN}Your IP supports access to OpenAI. Region: ${iso2_code4}${PLAIN}"
-            else
-                echo -e "${RED}Additional Endpoint Check Failed${PLAIN}"
             fi
         else
             echo -e "${RED}Region: ${iso2_code4}. Not support OpenAI at this time.${PLAIN}"
@@ -87,8 +85,6 @@ else
         if [[ "${SUPPORT_COUNTRY[@]}" =~ "${iso2_code6}" ]]; then
             if check_additional_endpoints; then
                 echo -e "${GREEN}Your IP supports access to OpenAI. Region: ${iso2_code6}${PLAIN}"
-            else
-                echo -e "${RED}Additional Endpoint Check Failed${PLAIN}"
             fi
         else
             echo -e "${RED}Region: ${iso2_code6}. Not support OpenAI at this time.${PLAIN}"
